@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/smbmss
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+# pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+#
+#  redis:
+#    host: 192.168.52.128
+#    port: 6379
+#    password: 123
+#    client-name: jedis
+#    jedis:
+#      pool:
+#        max-active: 10
+mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

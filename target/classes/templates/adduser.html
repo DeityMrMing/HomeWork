@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="userlist.html" method="post" th:action="@{/useradd}">
+    用户编码:<input type="text" name="userCode" /><br/>
+    用户名称:<input type="text" name="userName" /><br/>
+    用户密码:<input type="password" name="password" /><br/>
+    用户性别:<input type="text" name="gender" /><br/>
+    用户电话:<input type="text" name="phone" /><br/>
+    用户地址:<input type="text" name="address" /><br/>
+    用户角色:<input type="text" name="userRole" /><br/>
+    <input type="submit" name="提交" />
+</form>
+</body>
+</html>
